@@ -1,2 +1,2 @@
 General README for KoTheme for Helix
-[insert picture(s) here]
+![[~/home/kokurio/Pictures/2023-11-04_19-27.png]]
