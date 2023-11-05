@@ -1,0 +1,77 @@
+#Syntax Highlighting
+attribute = "lilac"
+keyword = { fg = "gold" }                  ##
+"keyword.directive" = "lilac" # -- preprocessor comments (#if in C)
+namespace = "lilac"
+punctuation = "lavender"
+"punctuation.delimiter" = "lavender"
+operator = "cyan"                          ##
+special = "honey"
+"variable.other.member" = "white"
+"variable.parameter" = { fg = "lavender"}
+type = "green"                             ##
+"type.builtin" = "green"                   ##
+constructor = "lilac"
+function = { fg = "blue" }                 ##
+"function.macro" = "lilac"
+"function.builtin" = { fg = "blue" }       ##
+tag = "almond"
+comment = "sirocco"
+constant = "white"
+"constant.builtin" = "white"
+"constant.numeric" = "chamois"
+"constant.character.escape" = "honey"
+string = { fg = "light-yellow" }           ##
+variable = { fg = "white" }
+number = "light-cyan"                      ##
+#Used for lifetimes
+label = "honey"
+
+
+#UI Elements
+"ui.background" = { bg = "midnight" }
+"ui.background.separator" = { fg = "comet" }
+"ui.linenr" = { fg = "comet" }
+"ui.linenr.selected" = {fg = "lilac" }
+"ui.statusline" = { fg = "lilac", bg = "revolver" }
+"ui.statusline.inactive" = { fg = "lavender", bg = "revolver" }
+"ui.popup" = { bg = "revolver" }
+"ui.window" = { fg = "bossanova" }
+"ui.help" = { bg = "#7958DC", fg = "#171452" }
+# -- UI text
+"ui.text" = { fg = "lavender" }
+"ui.text.focus" = { fg = "white" }
+"ui.text.inactive" = { fg = "lavender", bg = "revolver" }
+"ui.virtual" = { fg = "comet" }
+"ui.virtual.indent-guide" = { fg = "comet" }
+# -- Selection
+"ui.selection" = { bg = "540099" }
+"ui.selection.primary" = { bg = "540099" }
+# -- UI cursor
+"ui.cursor.select" = { bg = "delta" }
+"ui.cursor.insert" = { bg = "white" }
+"ui.cursor.match" = { fg = "#212121", bg = "#6C6999" }
+"ui.cursor" = {modifiers = ["reversed"] }
+
+
+
+#Palette
+[palette]
+white = "#ffffff"
+lilac = "#ba93ff"
+lavender = "#a4a0e8"
+comet = "#5a5977"
+bossanova = "#452859"
+midnight = "#3b224c"
+revolver = "#281733"
+
+silver = "#cccccc"
+sirocco = "#697C81"
+mint = "#9ff28f"
+almond = "#eccdba"
+chamois = "#E8DCA0"
+honey = "#efba5d"
+
+apricot = "#f47868"
+lightning = "#ffcd1c"
+delta = "#6F44F0"
