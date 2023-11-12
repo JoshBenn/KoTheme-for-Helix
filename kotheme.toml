@@ -29,7 +29,7 @@ label = "honey"
 
 
 #UI Elements
-"ui.background" = { bg = "midnight" }
+"ui.background" = { bg = "korple" }
 "ui.background.separator" = { fg = "comet" }
 "ui.linenr" = { fg = "comet" }
 "ui.linenr.selected" = {fg = "lilac" }
@@ -45,8 +45,8 @@ label = "honey"
 "ui.virtual" = { fg = "comet" }
 "ui.virtual.indent-guide" = { fg = "comet" }
 # -- Selection
-"ui.selection" = { bg = "540099" }
-"ui.selection.primary" = { bg = "540099" }
+"ui.selection" = { bg = "#540099" }
+"ui.selection.primary" = { bg = "#540099" }
 # -- UI cursor
 "ui.cursor.select" = { bg = "delta" }
 "ui.cursor.insert" = { bg = "white" }
@@ -63,6 +63,7 @@ lavender = "#a4a0e8"
 comet = "#5a5977"
 bossanova = "#452859"
 midnight = "#3b224c"
+korple = "#3f2b59"
 revolver = "#281733"
 
 silver = "#cccccc"
