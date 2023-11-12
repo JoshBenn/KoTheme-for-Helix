@@ -39,7 +39,7 @@ diagnostic = "green"
 #UI Elements
 "ui.background" = { bg = "korple" }
 "ui.background.separator" = { fg = "comet" }
-"ui.linenr" = { fg = "porple" }
+"ui.linenr" = { fg = "comet" }
 "ui.linenr.selected" = {fg = "white" }
 "ui.statusline" = { fg = "lilac", bg = "revolver" }
 "ui.statusline.inactive" = { fg = "lavender", bg = "revolver" }
