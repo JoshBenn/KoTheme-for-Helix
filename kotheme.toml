@@ -1,48 +1,57 @@
 #Syntax Highlighting
 attribute = "lilac"
-keyword = { fg = "gold" }                  ##
+"keyword" = { fg = "honey" }                  ##
+"keyword.function" = "blue"
 "keyword.directive" = "lilac" # -- preprocessor comments (#if in C)
-namespace = "lilac"
-punctuation = "lavender"
-"punctuation.delimiter" = "lavender"
+namespace = "apricot"
+punctuation = "white"
+"punctuation.delimiter" = "lilac"
 operator = "cyan"                          ##
-special = "honey"
+special = "mint"
 "variable.other.member" = "white"
-"variable.parameter" = { fg = "lavender"}
-type = "green"                             ##
+"variable.parameter" = { fg = "lilac"}
+"type" = "green"                             ##
 "type.builtin" = "green"                   ##
+"type.enum.variant" = "green"
 constructor = "lilac"
 function = { fg = "blue" }                 ##
-"function.macro" = "lilac"
+"function.macro" = "mint"
 "function.builtin" = { fg = "blue" }       ##
 tag = "almond"
-comment = "sirocco"
+comment = "comment_green"
 constant = "white"
 "constant.builtin" = "white"
-"constant.numeric" = "chamois"
+"constant.numeric" = "pumpkin"
 "constant.character.escape" = "honey"
 string = { fg = "light-yellow" }           ##
 variable = { fg = "white" }
-number = "light-cyan"                      ##
+number = { fg = "light_cyan" }             ##
 #Used for lifetimes
-label = "honey"
+label = "lightning"
 
+# General ==========================
+warning = "lilac"
+error = "cyan"
+hint = "yellow"
+info = "blue"
+diagnostic = "green"
 
 #UI Elements
 "ui.background" = { bg = "korple" }
 "ui.background.separator" = { fg = "comet" }
-"ui.linenr" = { fg = "comet" }
-"ui.linenr.selected" = {fg = "lilac" }
+"ui.linenr" = { fg = "porple" }
+"ui.linenr.selected" = {fg = "white" }
 "ui.statusline" = { fg = "lilac", bg = "revolver" }
 "ui.statusline.inactive" = { fg = "lavender", bg = "revolver" }
 "ui.popup" = { bg = "revolver" }
 "ui.window" = { fg = "bossanova" }
 "ui.help" = { bg = "#7958DC", fg = "#171452" }
+"ui.gutter" = { bg = "#212121" }
 # -- UI text
 "ui.text" = { fg = "lavender" }
 "ui.text.focus" = { fg = "white" }
 "ui.text.inactive" = { fg = "lavender", bg = "revolver" }
-"ui.virtual" = { fg = "comet" }
+"ui.virtual" = { fg = "sirocco" }
 "ui.virtual.indent-guide" = { fg = "comet" }
 # -- Selection
 "ui.selection" = { bg = "#540099" }
@@ -50,10 +59,13 @@ label = "honey"
 # -- UI cursor
 "ui.cursor.select" = { bg = "delta" }
 "ui.cursor.insert" = { bg = "white" }
-"ui.cursor.match" = { fg = "#212121", bg = "#6C6999" }
+"ui.cursor.match" = { fg = "#212121", bg = "white" } #matching parenthesis
 "ui.cursor" = {modifiers = ["reversed"] }
 
-
+# Version Controll ===================
+"diff.plus" = "white"
+"diff.minus" = "red"
+"diff.delta" = "cyan"
 
 #Palette
 [palette]
@@ -63,8 +75,15 @@ lavender = "#a4a0e8"
 comet = "#5a5977"
 bossanova = "#452859"
 midnight = "#3b224c"
-korple = "#3f2b59"
+korple = "#2f2e35"
 revolver = "#281733"
+comment_green = "#a2b791"
+light_cyan = "#589ca3"
+porple = "#963cfc"
+hot_pink = "#df3cfc"
+plains = "#7ae076"
+sky = "#40a4ad"
+pumpkin = "#f47e29"
 
 silver = "#cccccc"
 sirocco = "#697C81"
