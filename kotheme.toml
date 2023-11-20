@@ -1,10 +1,10 @@
 # GENERAL ==============================
 
-warning = { "lilac" } # Editor warnings.
-error = { "cyan" } # Editor errors, like mis-typing a command.
-info = { "blue" } # Contextual info in diagnostic messages (LSP).
-hint = { "yellow" } # Code diagnostics hints (LSP).
-diagnostic = { "green" } # Code diagnostics in editing area (LSP).
+warning = "lilac"  # Editor warnings.
+error = "cyan"  # Editor errors, like mis-typing a command.
+info = "blue"  # Contextual info in diagnostic messages (LSP).
+hint = "yellow"  # Code diagnostics hints (LSP).
+diagnostic = "green"  # Code diagnostics in editing area (LSP).
 
 # UI ==============================
 ## For styling helix itself.
@@ -38,7 +38,7 @@ diagnostic = { "green" } # Code diagnostics in editing area (LSP).
 
 'ui.statusline' = { fg = "lilac", bg = "revolver" } # Status line.
 'ui.statusline.inactive' = { fg = "lavender", bg = "revolver" } # Status line in unfocused windows.
-"ui.statusline.normal" = { } # Statusline mode during normal mode (only if editor.color-modes is enabled)
+#"ui.statusline.normal" = { } # Statusline mode during normal mode (only if editor.color-modes is enabled)
 #"ui.statusline.insert" = { } # Statusline mode during insert mode (only if editor.color-modes is enabled)
 #"ui.statusline.select" = { } # Statusline mode during select mode (only if editor.color-modes is enabled)
 
