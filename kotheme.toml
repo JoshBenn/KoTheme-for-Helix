@@ -1,20 +1,23 @@
 # GENERAL ==============================
 
-warning = "lilac"  # Editor warnings.
-error = "cyan"  # Editor errors, like mis-typing a command.
-info = "blue"  # Contextual info in diagnostic messages (LSP).
-hint = "yellow"  # Code diagnostics hints (LSP).
+warning = { fg = "gold2" }  # Editor warnings.
+error = { fg = "red" } # Editor errors, like mis-typing a command.
+info = { fg = "light_blue" } # Contextual info in diagnostic messages (LSP).
+hint = { fg = "light_gray3" }  # Code diagnostics hints (LSP).
 diagnostic = "green"  # Code diagnostics in editing area (LSP).
+
+'diagnostic.error'.underline = { color = "red", style = "curl" }
+#"diagnostic".underline = { color = "gold", style = "curl" }   # breaks the theme for some reason
 
 # UI ==============================
 ## For styling helix itself.
 
 'ui.background' = { bg = "background" } # Default background color.
-'ui.background.separator' = { fg = "comet" }
+'ui.background.separator' = { fg = "white" }
 'ui.window' = { fg = "bossanova" } # Window border between splits.
 'ui.gutter' = { bg = "korple" } # Left gutter for diagnostics and breakpoints.
 
-'ui.text' = { fg = "lavender" } # Default text color.
+'ui.text' = { fg = "lilac" } # Default text color.
 'ui.text.focus' = { fg = "white" } # Selection highlight in buffer-picker or file-picker.
 #'ui.text.info' = { } # Info popup contents (space mode menu).
 'ui.text.inactive' = { fg = "lavender", bg = "revolver" }
@@ -31,10 +34,11 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 'ui.linenr' = { fg = "delta" } # Line numbers.
 'ui.linenr.selected' = { fg = "white" } # Current line number.
 
-'ui.virtual' = { fg = "sirocco" } # Namespace for additions to the editing area.
-#'ui.virtual.ruler' = { } # Vertical rulers (colored columns in editing area).
-#'ui.virtual.whitespace' = { } # Whitespace markers in editing area.
-'ui.virtual.indent-guide' = { fg = "comet" }
+#'ui.virtual' = { fg = "sirocco" } # Namespace for additions to the editing area.
+'ui.virtual.ruler' = { bg = "borders" } # Vertical rulers (colored columns in editing area).
+'ui.virtual.whitespace' = { fg = "dark_gray" } # Whitespace markers in editing area.
+'ui.virtual.indent-guide' = { fg = "coffee" }
+'ui.virtual.inlay-hint' = { fg = "dark_gray5" }
 
 'ui.statusline' = { fg = "lilac", bg = "revolver" } # Status line.
 'ui.statusline.inactive' = { fg = "lavender", bg = "revolver" } # Status line in unfocused windows.
@@ -57,21 +61,21 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 # All the keys here are Treesitter scopes.
 
 #'property' = { } # Regex group names.
-'special' = "gold"  # Special symbols e.g `?` in Rust, `...` in Hare. ---#mint
+'special' = "blue2"  # Special symbols e.g `?` in Rust, `...` in Hare. ---#mint
 'attribute' = "lilac"  # Class attributes, html tag attributes.
 
 'type' = "green"  # Variable type, like integer or string, including program defined classes, structs etc..
-'type.builtin' = "green"  # Primitive types of the language (string, int, float).
-'type.enum.variant' = "green"  # A variant of an enum.
+'type.builtin' = "light_blue"  # Primitive types of the language (string, int, float).
+'type.enum.variant' = "lilac"  # A variant of an enum.
 
 'constructor' = "lilac"  # Constructor method for a class or struct.
 
 'constant' = "white"  # Constant value
-'constant.builtin' = "orange"  # Special constants like `true`, `false`, `none`, etc. ---#white
+'constant.builtin' = "chamois"  # Special constants like `true`, `false`, `none`, etc. ---#white
 #'constant.builtin.boolean' = { } # True or False.
 #'constant.character' = { } # Constant of character type.
 'constant.character.escape' = "gold"  # escape codes like \n.  ---#honey
-'constant.numeric' = "pumpkin"  # constant integer or float value.
+'constant.numeric' = "chamois"  # constant integer or float value.
 #'constant.numeric.integer' = { } # constant integer value.
 #'constant.numeric.float' = { } # constant float value.
 
@@ -82,23 +86,23 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 #'string.special.url' = { } # String containing a web URL.
 #'string.special.symbol' = { } # Erlang/Elixir atoms, Ruby symbols, Clojure keywords.
 
-'comment' = "dark_green"  # This is a comment. ---#comment_green
+'comment' = "dark_gray5"  # This is a comment. ---#comment_green
 #'comment.line' = { } # Line comments, like this.
 #'comment.block' = { } # Block comments, like /* this */ in some languages.
 'comment.block.documentation' = "comment_green"  # Doc comments, e.g '///' in rust.
 
-'variable' = "white"  # Variable names.
+'variable' = "light_blue"  # Variable names.
 'variable.builtin' = "blue"  # Language reserved variables: `this`, `self`, `super`, etc.
 'variable.parameter' = "lilac"  # Function parameters.
-'variable.other.member' = "white"  # Fields of composite data types (e.g. structs, unions).
+'variable.other.member' = "midday_sky"  # Fields of composite data types (e.g. structs, unions).
 
-'label' = "lightning"  # Loop labels, among other things.
+'label' = "blue"  # Loop labels, among other things.
 
 'punctuation' = "lilac"  # Any punctuation symbol. ---#white
 'punctuation.delimiter' = "lilac"  # Commas, colons or other delimiter depending on the language.
-'punctuation.bracket' = "white"  # Parentheses, angle brackets, etc.
+'punctuation.bracket' = "silver"  # Parentheses, angle brackets, etc.
 
-'keyword' = "honey"  # Language reserved keywords.
+'keyword' = "white"  # Language reserved keywords.
 #'keyword.control' = { } # Control keywords.
 #'keyword.control.conditional' = { } # `if`, `else`, `elif`.
 #'keyword.control.repeat' = { } # `for`, `while`, `loop`.
@@ -106,21 +110,21 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 #'keyword.control.return' = { } # `return` in most languages.
 #'keyword.control.exception' = { } # `try`, `catch`, `raise`/`throw` and related.
 #'keyword.operator' = { } # `or`, `and`, `in`.
-'keyword.directive' = "honey"  # Preprocessor directives (#if in C...).
-'keyword.function' = "blue"  # The keyword to define a function: 'def', 'fun', 'fn'.
+'keyword.directive' = "blue2"  # Preprocessor directives (#if in C...).
+'keyword.function' = "white"  # The keyword to define a function: 'def', 'fun', 'fn'.
 
 'operator' = "cyan"  # Logical, mathematical, and other operators.
 
-'function' = "blue" 
-'function.builtin' = "blue" 
+'function' = "apricot" 
+'function.builtin' = "fn_declaration" 
 #'function.method' = { } # Class / Struct methods.
-'function.macro' = "gold" 
+'function.macro' = "blue2"  # <--------Annoying if a very bright color 
 #'function.special' = { } # Preprocessor function in C.
 
-'tag' = "almond"  # As in <body> for html, css tags.
+'tag' = "blue"  # As in <body> for html, css tags.
 #'tag.error' = { } # Erroneous closing html tags.
 
-'namespace' = "apricot"  # Namespace or module identifier.
+'namespace' = "blue4"  # Namespace or module identifier.
 
 
 # Markup ==============================
@@ -184,7 +188,7 @@ background = "#1e1e1e"
 stone = "#262626"
 silver = "#cccccc"
 sirocco = "#697C81"
-coffee = "#442a08"
+coffee = "#634011"
 
 light_gray = "#d4d4d4"
 light_gray2 = "#c6c6c6"
