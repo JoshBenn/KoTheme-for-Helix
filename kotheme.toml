@@ -57,48 +57,48 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 # All the keys here are Treesitter scopes.
 
 #'property' = { } # Regex group names.
-'special' = { "gold" } # Special symbols e.g `?` in Rust, `...` in Hare. ---#mint
-'attribute' = { "lilac" } # Class attributes, html tag attributes.
+'special' = "gold"  # Special symbols e.g `?` in Rust, `...` in Hare. ---#mint
+'attribute' = "lilac"  # Class attributes, html tag attributes.
 
-'type' = { "green" } # Variable type, like integer or string, including program defined classes, structs etc..
-'type.builtin' = { "green" } # Primitive types of the language (string, int, float).
-'type.enum.variant' = { "green" } # A variant of an enum.
+'type' = "green"  # Variable type, like integer or string, including program defined classes, structs etc..
+'type.builtin' = "green"  # Primitive types of the language (string, int, float).
+'type.enum.variant' = "green"  # A variant of an enum.
 
-'constructor' = { "lilac" } # Constructor method for a class or struct.
+'constructor' = "lilac"  # Constructor method for a class or struct.
 
-'constant' = { "white" } # Constant value
-'constant.builtin' = { "orange" } # Special constants like `true`, `false`, `none`, etc. ---#white
+'constant' = "white"  # Constant value
+'constant.builtin' = "orange"  # Special constants like `true`, `false`, `none`, etc. ---#white
 #'constant.builtin.boolean' = { } # True or False.
 #'constant.character' = { } # Constant of character type.
-'constant.character.escape' = { "gold" } # escape codes like \n.  ---#honey
-'constant.numeric'  = { "pumpkin" } # constant integer or float value.
+'constant.character.escape' = "gold"  # escape codes like \n.  ---#honey
+'constant.numeric' = "pumpkin"  # constant integer or float value.
 #'constant.numeric.integer' = { } # constant integer value.
 #'constant.numeric.float' = { } # constant float value.
 
-'string' = { "light-yellow" } # String literal.
+'string' = "light-yellow"  # String literal.
 #'string.regexp' = { } # Regular expression literal.
-'string.special' = { "light_cyan" } # Strings containing a path, URL, etc.
+'string.special' = "light_cyan"  # Strings containing a path, URL, etc.
 #'string.special.path' = { } # String containing a file path.
 #'string.special.url' = { } # String containing a web URL.
 #'string.special.symbol' = { } # Erlang/Elixir atoms, Ruby symbols, Clojure keywords.
 
-'comment' = { "dark_green" } # This is a comment. ---#comment_green
+'comment' = "dark_green"  # This is a comment. ---#comment_green
 #'comment.line' = { } # Line comments, like this.
 #'comment.block' = { } # Block comments, like /* this */ in some languages.
-'comment.block.documentation' = { "comment_green" } # Doc comments, e.g '///' in rust.
+'comment.block.documentation' = "comment_green"  # Doc comments, e.g '///' in rust.
 
-'variable' = { "white" } # Variable names.
-'variable.builtin' = { "blue" } # Language reserved variables: `this`, `self`, `super`, etc.
-'variable.parameter' = { "lilac" } # Function parameters.
-'variable.other.member' = { "white" } # Fields of composite data types (e.g. structs, unions).
+'variable' = "white"  # Variable names.
+'variable.builtin' = "blue"  # Language reserved variables: `this`, `self`, `super`, etc.
+'variable.parameter' = "lilac"  # Function parameters.
+'variable.other.member' = "white"  # Fields of composite data types (e.g. structs, unions).
 
-'label' = { "lightning" } # Loop labels, among other things.
+'label' = "lightning"  # Loop labels, among other things.
 
-'punctuation' = { "lilac" } # Any punctuation symbol. ---#white
-'punctuation.delimiter' = { "lilac" } # Commas, colons or other delimiter depending on the language.
-'punctuation.bracket' = { "white" } # Parentheses, angle brackets, etc.
+'punctuation' = "lilac"  # Any punctuation symbol. ---#white
+'punctuation.delimiter' = "lilac"  # Commas, colons or other delimiter depending on the language.
+'punctuation.bracket' = "white"  # Parentheses, angle brackets, etc.
 
-'keyword' = { "honey" } # Language reserved keywords.
+'keyword' = "honey"  # Language reserved keywords.
 #'keyword.control' = { } # Control keywords.
 #'keyword.control.conditional' = { } # `if`, `else`, `elif`.
 #'keyword.control.repeat' = { } # `for`, `while`, `loop`.
@@ -106,21 +106,21 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 #'keyword.control.return' = { } # `return` in most languages.
 #'keyword.control.exception' = { } # `try`, `catch`, `raise`/`throw` and related.
 #'keyword.operator' = { } # `or`, `and`, `in`.
-'keyword.directive' = { "honey" } # Preprocessor directives (#if in C...).
-'keyword.function' = { "blue" } # The keyword to define a function: 'def', 'fun', 'fn'.
+'keyword.directive' = "honey"  # Preprocessor directives (#if in C...).
+'keyword.function' = "blue"  # The keyword to define a function: 'def', 'fun', 'fn'.
 
-'operator' = { "cyan" } # Logical, mathematical, and other operators.
+'operator' = "cyan"  # Logical, mathematical, and other operators.
 
-'function' = { "blue" }
-'function.builtin' = { "blue" }
+'function' = "blue" 
+'function.builtin' = "blue" 
 #'function.method' = { } # Class / Struct methods.
-'function.macro' = { "gold" }
+'function.macro' = "gold" 
 #'function.special' = { } # Preprocessor function in C.
 
-'tag' = { "almond" } # As in <body> for html, css tags.
+'tag' = "almond"  # As in <body> for html, css tags.
 #'tag.error' = { } # Erroneous closing html tags.
 
-'namespace' = { "apricot" } # Namespace or module identifier.
+'namespace' = "apricot"  # Namespace or module identifier.
 
 
 # Markup ==============================
@@ -135,7 +135,7 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 #'markup.heading.6' = { } # Markdown heading 6 color.
 #'markup.heading.marker' = { } # Hashtag color on Markdown headings.
 
-'markup.list' = { "blue3" }
+'markup.list' = "blue3" 
 #'markup.list.numbered' = { } # Numbered list.
 #'markup.list.unnumbered' = { } # Bullet point list.
 
@@ -146,9 +146,9 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 #'markup.link' = { }
 'markup.link.url' = { modifiers = ["underlined"] } # Urls pointed to by links.
 #'markup.link.label' = { } # Non-URL link references.
-'markup.link.text' = { "orange" } # URL and image descriptions in links.
+'markup.link.text' = "orange"  # URL and image descriptions in links.
 
-'markup.quote' = { "dark_green" } # `> Quotes` in Markdown.
+'markup.quote' = "dark_green"  # `> Quotes` in Markdown.
 
 
 # Markup - Interface ==============================
@@ -161,7 +161,7 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 #'markup.heading.completion' = { } # Headings for completion doc popup ui.
 #'markup.heading.raw' = { } # Headings for hover popup ui.
 
-'markup.raw' = { "orange" } # Code block in Markdown.
+'markup.raw' = "orange"  # Code block in Markdown.
 #'markup.raw.block' = { } # Multiline (```) codeblock in Markdown.
 #'markup.raw.inline' = { } # `Inline code block` in Markdown.
 #'markup.raw.inline.completion' = { } # ?
@@ -170,9 +170,9 @@ diagnostic = "green"  # Code diagnostics in editing area (LSP).
 # Diff ==============================
 # Version control changes.
 
-'diff.plus' = { "white" } # Additions.
-'diff.minus' = { "red" } # Deletions.
-'diff.delta' = { "cyan" } # Modifications.
+'diff.plus' = "white"  # Additions.
+'diff.minus' = "red"  # Deletions.
+'diff.delta' = "cyan"  # Modifications.
 #'diff.delta.moved' = { } # Renamed or moved files.
 
 #Custom color definitions =======================
