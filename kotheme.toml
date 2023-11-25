@@ -17,7 +17,7 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 'ui.window' = { fg = "bossanova" } # Window border between splits.
 'ui.gutter' = { bg = "korple" } # Left gutter for diagnostics and breakpoints.
 
-'ui.text' = { fg = "lilac" } # Default text color.
+'ui.text' = { fg = "lavender" } # Default text color.
 'ui.text.focus' = { fg = "white" } # Selection highlight in buffer-picker or file-picker.
 #'ui.text.info' = { } # Info popup contents (space mode menu).
 'ui.text.inactive' = { fg = "lavender", bg = "revolver" }
@@ -40,7 +40,7 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 'ui.virtual.indent-guide' = { fg = "coffee" }
 'ui.virtual.inlay-hint' = { fg = "coffee" }
 
-'ui.statusline' = { fg = "lilac", bg = "revolver" } # Status line.
+'ui.statusline' = { fg = "lavender", bg = "revolver" } # Status line.
 'ui.statusline.inactive' = { fg = "lavender", bg = "revolver" } # Status line in unfocused windows.
 #"ui.statusline.normal" = { } # Statusline mode during normal mode (only if editor.color-modes is enabled)
 #"ui.statusline.insert" = { } # Statusline mode during insert mode (only if editor.color-modes is enabled)
@@ -50,7 +50,7 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 
 #'ui.highlight' = { } # selected contents of symbol pickers (spc-s, spc-S) and current line in buffer picker (spc-b).
 
-#'ui.menu' = { } # Autocomplete menu.
+'ui.menu' = "light_gray" # Autocomplete menu.
 #'ui.menu.selected' = { } # Selected autocomplete item.
 
 'ui.popup' = { bg = "revolver" } # Documentation popups (space-k).
@@ -62,19 +62,19 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 
 #'property' = { } # Regex group names.
 'special' = "apricot"  # Special symbols e.g `?` in Rust, `...` in Hare. ---#mint
-'attribute' = "lilac"  # Class attributes, html tag attributes.
+'attribute' = "lavender"  # Class attributes, html tag attributes.
 
-'type' = "lightning"  # Variable type, like integer or string, including program defined classes, structs etc..
+'type' = "light_yellow"  # Variable type, like integer or string, including program defined classes, structs etc..
 'type.builtin' = "light_blue"  # Primitive types of the language (string, int, float).
-'type.enum.variant' = "lilac"  # A variant of an enum.
+'type.enum.variant' = "lavender"  # A variant of an enum.
 
 'constructor' = "lilac"  # Constructor method for a class or struct.
 
 'constant' = "white"  # Constant value
-'constant.builtin' = "blue"  # Special constants like `true`, `false`, `none`, etc. ---#white
+'constant.builtin' = "apricot"  # Special constants like `true`, `false`, `none`, etc. ---#white
 #'constant.builtin.boolean' = { } # True or False.
 #'constant.character' = { } # Constant of character type.
-'constant.character.escape' = "gold"  # escape codes like \n.  ---#honey
+'constant.character.escape' = "honey"  # escape codes like \n.  ---#honey
 'constant.numeric' = "chamois"  # constant integer or float value.
 #'constant.numeric.integer' = { } # constant integer value.
 #'constant.numeric.float' = { } # constant float value.
@@ -91,10 +91,10 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 #'comment.block' = { } # Block comments, like /* this */ in some languages.
 'comment.block.documentation' = "comment_green"  # Doc comments, e.g '///' in rust.
 
-'variable' = "light_blue"  # Variable names.
+'variable' = "horizon"  # Variable names.
 'variable.builtin' = "blue"  # Language reserved variables: `this`, `self`, `super`, etc.
-'variable.parameter' = "lilac"  # Function parameters.
-'variable.other.member' = "midday_sky"  # Fields of composite data types (e.g. structs, unions).
+'variable.parameter' = "lavender"  # Function parameters.
+'variable.other.member' = "light_blue"  # Fields of composite data types (e.g. structs, unions).
 
 'label' = "blue"  # Loop labels, among other things.
 
@@ -106,7 +106,7 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 #'keyword.control' = { } # Control keywords.
 'keyword.control.conditional' = "pink" # `if`, `else`, `elif`.
 'keyword.control.repeat' = "pink" # `for`, `while`, `loop`.
-#'keyword.control.import' = { } # `import`, `export` `use`.
+'keyword.control.import' = "lavender" # `import`, `export` `use`.
 #'keyword.control.return' = { } # `return` in most languages.
 #'keyword.control.exception' = { } # `try`, `catch`, `raise`/`throw` and related.
 'keyword.operator' = "light_pink" # `or`, `and`, `in`.
@@ -118,7 +118,7 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 'function' = "blue" 
 'function.builtin' = "fn_declaration" 
 #'function.method' = { } # Class / Struct methods.
-'function.macro' = "blue2"  # <--------Annoying if a very bright color 
+'function.macro' = "cream"  # <--------Annoying if a very bright color 
 #'function.special' = { } # Preprocessor function in C.
 
 'tag' = "blue"  # As in <body> for html, css tags.
@@ -215,10 +215,10 @@ light_cyan = "#589ca3"
 horizon = "#40a4ad"
 midday_sky = "#4ec9b0"
 blue = "#007acc"
+light_blue = "#75beff"
 blue2 = "#569CD6"
 blue3 = "#6796E6"
 blue4 = "#1b81a8"
-light_blue = "#75beff"
 dark_blue = "#264f78"
 dark_blue2 = "#094771"
 
@@ -230,6 +230,7 @@ almond = "#eccdba"
 honey = "#efba5d"
 gold = "#cca700"
 lightning = "#ffcd1c"
+light_yellow = "#e8de76"
 
 ## Green Variants
 mint = "#9ff28f"
