@@ -184,7 +184,8 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 
 ## Primaries
 white = "#ffffff"
-background = "#1e1e1e"
+background = "#17171717"
+old_background = "#1e1e1e"
 stone = "#262626"
 silver = "#cccccc"
 sirocco = "#697C81"
