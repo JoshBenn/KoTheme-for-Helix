@@ -17,6 +17,10 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 'ui.window' = { fg = "bossanova" } # Window border between splits.
 'ui.gutter' = { bg = "korple" } # Left gutter for diagnostics and breakpoints.
 
+#'ui.bufferline' = ""
+'ui.bufferline.active' = { fg = "revolver", bg = "lavender"}
+'ui.bufferline.background' = "korple"
+
 'ui.text' = { fg = "lavender" } # Default text color.
 'ui.text.focus' = { fg = "white" } # Selection highlight in buffer-picker or file-picker.
 #'ui.text.info' = { } # Info popup contents (space mode menu).
@@ -43,8 +47,8 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 'ui.statusline' = { fg = "lavender", bg = "revolver" } # Status line.
 'ui.statusline.inactive' = { fg = "lavender", bg = "revolver" } # Status line in unfocused windows.
 #"ui.statusline.normal" = { } # Statusline mode during normal mode (only if editor.color-modes is enabled)
-#"ui.statusline.insert" = { } # Statusline mode during insert mode (only if editor.color-modes is enabled)
-#"ui.statusline.select" = { } # Statusline mode during select mode (only if editor.color-modes is enabled)
+'ui.statusline.insert' = { fg = "revolver", bg = "lavender" } # Statusline mode during insert mode (only if editor.color-modes is enabled)
+'ui.statusline.select' = { fg = "revolver", bg = "apricot" } # Statusline mode during select mode (only if editor.color-modes is enabled)
 
 'ui.help' = { bg = "#7958DC", fg = "#171452" } # `:command` descriptions above the command line.
 
@@ -184,7 +188,7 @@ diagnostic = "orange"  # Code diagnostics in editing area (LSP).
 
 ## Primaries
 white = "#ffffff"
-background = "#17171717"
+background = "#171717"
 old_background = "#1e1e1e"
 stone = "#262626"
 silver = "#cccccc"
