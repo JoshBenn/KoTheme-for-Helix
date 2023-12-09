@@ -1,0 +1,50 @@
+theme = "kotheme"
+
+[editor]
+bufferline = "multiple"
+#line-number = "relative"
+scroll-lines = 3
+scrolloff = 10
+mouse = true
+auto-pairs = true
+true-color = true
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
+
+[editor.indent-guides]
+character = "|"
+render = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
+[editor.lsp]
+display-messages = true
+
+[keys.normal]
+"C-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"] #Ctrl-s
+"C-k" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"] #Ctrl-k
+g = { a = "code_action" } #Maps `ga` to show possible code actions
+"ret" = ["open_below", "normal_mode"] #Maps enter to move to start of next line
+X = "extend_line_above"
+D = "delete_char_backward"
+"A-," = "goto_previous_buffer"
+"A-." = "goto_next_buffer"
+"A-w" = ":buffer-close"
+"A-/" = "repeat_last_motion"
+
+[keys.normal.space]
+"i" = ":toggle lsp.display-inlay-hints"
+"W" = ":toggle whitespace.render all none"
+
+[keys.insert]
+j = { k = "normal_mode" } #Maps `jk` to exit insert mode
+
+

@@ -1,0 +1,67 @@
+#Rust
+[[language]]
+name = "rust"
+auto-format = false
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+
+#C
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.clangd]
+command = "clangd"
+
+
+#NodeJS
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server"]
+
+[language-server.typescript-language-server]
+command = "tslsp"
+name = ""
+language-servers = ["typescript-language-server"]
+
+
+#html
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server"]
+
+[language-server.vscode-html-language-server]
+command = "htmllsp"
+
+
+#CSS
+[[language]]
+name = "css"
+language-servers = ["vscode-css-language-server"]
+
+[langauge-server.vscode-css-language-server]
+command = "csslsp"
+
+
+#Python
+[[language]]
+name = "python"
+language-servers = ["pylsp"]
+
+[language-server.pylsp]
+command = "pylsp"
+
+
+
